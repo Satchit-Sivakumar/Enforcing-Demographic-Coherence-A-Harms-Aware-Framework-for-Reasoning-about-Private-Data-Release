@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 #This corresponds to the analyst releasing a subset of the columns of the NIST dataset in the clear
 def release():
-    data = pd.read_csv('/Users/satchit/Downloads/national2019.csv') #Replace the address here accordingly
+    data = pd.read_csv('insert address here') #Replace the address here accordingly
     datarelease = data[['AGEP', 'DENSITY', 'INDP_CAT', 'INDP', 'SEX', 'EDU', 'HISP', 'RAC1P', 'DREM']]
     datarelease = datarelease.replace('N', '-10')
 
